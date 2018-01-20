@@ -1,35 +1,35 @@
 # Appendix: Colophon {#colophon}
 
-Almost all of the software that I have used in the creation of this book are [FLOSS](./floss.md#floss).
+Hampir semua perangkat lunak yang Penulis gunakan untuk menulis buku ini adalah [FLOSS](./floss.md#floss).
 
 ## Birth of the Book
 
-In the first draft of this book, I had used Red Hat 9.0 Linux as the foundation of my setup and in the sixth draft, I used Fedora Core 3 Linux as the basis of my setup.
+Di draft pertama buku ini, Penulis menggunakan Linux Red Hat 9.0 sebagai dasar buku ini dan di draft yang keenam, Penulis menggunakan Linux Fedora Core 3.
 
-Initially, I was using KWord to write the book (as explained in the [history lesson](./revision_history.md#history-lesson)).
+Pada awalnya Penulis menggunakan KWord untuk menulis buku ini (seperti yang dijelaskan dibagian  [history lesson](./revision_history.md#history-lesson))
 
 ## Teenage Years
 
-Later, I switched to DocBook XML using Kate but I found it too tedious. So, I switched to OpenOffice which was just excellent with the level of control it provided for formatting as well as the PDF generation, but it produced very sloppy HTML from the document.
+Lalu, Penulis merubahnya dengan menggunakan DocBook XML dan Kate tapi ternyata terlalu merepotkan. Jadi, Penulis putuskan bahwa OpenOffice merupakan solusi terbaik karena sudah ada formatting dan bisa membuat file PDF, namun ia tidak mampu membuat dokumen HTML yang bagus. 
 
-Finally, I discovered XEmacs and I rewrote the book from scratch in DocBook XML (again) after I decided that this format was the long term solution.
+Akhirnya, Penulis menemukan XEmacs dan Penulis menulis ulang buku ini dari awal dengan DocBOok XML (lagi) setelah Penulis putuskan bahwa format ini merupakan solusi jangka panjang. 
 
-In the sixth draft, I decided to use Quanta+ to do all the editing. The standard XSL stylesheets that came with Fedora Core 3 Linux were being used. However, I had written a CSS document to give color and style to the HTML pages. I had also written a crude lexical analyzer, in Python of course, which automatically provides syntax highlighting to all the program listings.
+Di draft keenam, Penulis putuskan untuk menggunakan Quanta+ untuk semua editing. Standar stylesheet XSL yang ada di Linux Fedora Core 3 dipakai. Namun, Penulis harus membuat dokumen CSS untuk memberikan warna dan style halaman HTML. Penulis juga membuat sebuah crude lexical analyzer, dalam bahasa Python tentu saja, yang secara otomatis akan memberikan syntax highlighting untuk semua kode program. 
 
-For the seventh draft, I was using [MediaWiki](http://www.mediawiki.org) as the basis of my setup. I used to edit everything online and the readers can directly read/edit/discuss within the wiki website, but I ended up spending more time fighting spam than writing.
+Untuk draft ketujuh, penulis menggunakan [MediaWiki](http://www.mediawiki.org). Penulis awalnya melakukan proses edit secara online dan pembaca dapat membaca/mengedit/mendiskusikan buku langsung di website wiki langsung, namun Penulis berakhir dengan mengurus spam dibanding menulis.
 
-For the eight draft, I used [Vim]({{ book.vimBookUrl }}), [Pandoc](http://johnmacfarlane.net/pandoc/README.html), and Mac OS X.
+Di draft yang kedelapan, Penulis menggunakan [Vim]({{ book.vimBookUrl }}), [Pandoc](http://johnmacfarlane.net/pandoc/README.html), dan Mac OS X.
 
-For the ninth draft, I switched to [AsciiDoc format](http://asciidoctor.org/docs/what-is-asciidoc/) and used [Emacs 24.3](http://www.masteringemacs.org/articles/2013/03/11/whats-new-emacs-24-3/),
+Di draft kedelapan, Penulis berubah menggunakan [AsciiDoc format](http://asciidoctor.org/docs/what-is-asciidoc/) dan memakai [Emacs 24.3](http://www.masteringemacs.org/articles/2013/03/11/whats-new-emacs-24-3/),
 [tomorrow theme](https://github.com/chriskempson/tomorrow-theme),
-[Fira Mono font](https://www.mozilla.org/en-US/styleguide/products/firefox-os/typeface/#download-primary) and [adoc-mode](https://github.com/sensorflo/adoc-mode/wiki) to write.
+[Fira Mono font](https://www.mozilla.org/en-US/styleguide/products/firefox-os/typeface/#download-primary) and [adoc-mode](https://github.com/sensorflo/adoc-mode/wiki) untuk menulisnya.
 
 ## Now
 
-2016: I got tired of several minor rendering issues in AsciiDoctor, like the `++` in `C/C++` would disappear and it was hard to keep track of escaping such minor things. Plus, I had become reluctant to edit the text because of the complex Asciidoc format.
+2016: Penulis letih dengan masalah rendering di AsciiDoctor, seperti `++` di `C/C++` akan menghilang dan sulit untuk mencari cara menyelesaikan masalah tersebut. Selain itu, Penulis juga sudah mulai enggan untuk mengedit dalam format Asciidoc yang kompleks. 
 
-For the tenth draft, I switched to writing in Markdown + [GitBook](https://www.gitbook.com) format, using the [Spacemacs editor](http://spacemacs.org).
+Untuk draft yang kesepuuh, Penulis ganti menggunakan format Markdown + [GitBook](https://www.gitbook.com), dengan editor [Spacemacs editor](http://spacemacs.org).
 
 ## About the Author
 
-See {{ book.authorUrl }}
+Lihat {{ book.authorUrl }}
