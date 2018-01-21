@@ -1,18 +1,18 @@
-# Preface
+# Pendahuluan
 
-Python is probably one of the few programming languages which is both simple and powerful. This is good for beginners as well as for experts, and more importantly, is fun to program with. This book aims to help you learn this wonderful language and show how to get things done quickly and painlessly - in effect 'The Anti-venom to your programming problems'.
+PYthon mungkin satu dari sedikit bahasa pemrograman yang sederhana dan _powerful_ diwaktu yang bersamaan. Kelebihan ini baik untuk pemula maupun untuk yang sudah ahli, dan tentu saja, menyenangkan untuk dipakai memprogram. Tujuan buku ini ialah untuk membantu pembaca mempelajari bahasa yang luar biasa ini dan menunjukkan bagiamana untuk melakukan berbagai hal dengan cepat dan mudah - dalam efek "penawar masalah-masalah perogramanmu".
 
-## Who This Book Is For
+## Untuk Siapa Buku Ini Ditulis
 
-This book serves as a guide or tutorial to the Python programming language. It is mainly targeted at newbies. It is useful for experienced programmers as well.
+Untuk ini bertindak sebagai sebuah panduan atau tutorial untuk belajar bahasa pemrograman Python. Target utamanya adalah peula. Meskipun, buku ini juga dapat berguna untuk programmer berpengalaman. 
 
-The aim is that if all you know about computers is how to save text files, then you can learn Python from this book. If you have previous programming experience, then you can also learn Python from this book.
+Jika pembaca sudah tahu bagaimana cara menggunakan komputer, bagaimana menyimpan file teks, maka pembaca bisa belajar Python dari buku ini. Jika pembaca pernah belajar bahasa pemrograman lain, maka pembaca juga bisa belajar Python dari buku ini. 
 
-If you do have previous programming experience, you will be interested in the differences between Python and your favorite programming language - I have highlighted many such differences. A little warning though, Python is soon going to become your favorite programming language!
+Jika pembaca sudah pernah memiliki pengalaman pemrograman sebelumnya, pembaca mungkin tertarik untuk melihat perbedaan-perbedaan antara Python dan bahasa favorit pembaca - Penulis sudah menuliskan banyak perbedaannya. Satu peringatan, Python akan segera menjadi bahasa pemrograman favorit pembaca!
 
 ## Official Website
 
-The official website of the book is {{ book.officialUrl }} where you can read the whole book online, download the latest versions of the book, [buy a printed hard copy]({{ book.buyBookUrl }}) and also send me feedback.
+Halaman resmi buku ini ada di {{ book.officialUrl }} dimana buku ini bisa dibaca secara online, mengunduh versi terbaru, [membeli _hard copy_-nya]({{ book.buyBookUrl }}) dan juga menirim umpan balik.
 
 ## Something To Think About
 
