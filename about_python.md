@@ -58,7 +58,7 @@ Jika kita perlu membuat salah satu bagian kode untuk berjalna dengan sangat cepa
 
 ### Embeddable
 
-Kita bisa menyisipkan program Python di dalam program C/C++ yang memberiakn kemampuan _scripting_ untuk pengguna aplikasi.
+Kita bisa menyisipkan program Python di dalam program C/C++ yang memberikan kemampuan _scripting_ untuk pengguna aplikasi.
 
 ### Memiliki Pustaka yang Besar
 
