@@ -1,73 +1,73 @@
-# Basics
+# Dasar-dasar Python
 
-Just printing `hello world` is not enough, is it? You want to do more than that - you want to take some input, manipulate it and get something out of it. We can achieve this in Python using constants and variables, and we'll learn some other concepts as well in this chapter.
+Hanya mencetak `hello world` tentu tidak cukup bukan? Pembaca tentu ingin melakukan lebih dari hal tersebut - pembaca ingin mengambil beberapa data masukan, mengubahnya serta mendapatkan sesuatu darinya. Kita bisa melakukan hal tersebut di Python menggunakna konstanta dan variabel, dan kita juga akan mempelajari konsep-konsep lainnya di bab ini. 
 
-## Comments
+## Komentar
 
-_Comments_ are any text to the right of the `#` symbol and is mainly useful as notes for the reader of the program.
+_Komentar_ adalah semua teks yang berada di sebelah kanan simbol `#` serta berfungsi sebagai catatan yang membantu pembaca program.
 
-For example:
+Contoh:
 
 ```python
-print('hello world') # Note that print is a function
+print('hello world') # Perhatikan bahwa print adalah sebuah fungsi
 ```
 
-or:
+atau:
 
 ```python
-# Note that print is a function
+# Perhatikan bahwa print adalah sebuah fungsi
 print('hello world')
 ```
 
-Use as many useful comments as you can in your program to:
+Gunakan komentar sebanyak dan sebaik mungkin di program kita untuk:
 
-- explain assumptions
-- explain important decisions
-- explain important details
-- explain problems you're trying to solve
-- explain problems you're trying to overcome in your program, etc.
+- menjelaskan asumsi
+- menjelaskan keputusan penting
+- menjelaskan detail penting
+- menjelaskan masalah yang hendak di selesaikan
+- menjelaskan masalah yang coba dicegah di progam, dll.
 
 [*Code tells you how, comments should tell you why*](http://www.codinghorror.com/blog/2006/12/code-tells-you-how-comments-tell-you-why.html).
 
-This is useful for readers of your program so that they can easily understand what the program is doing. Remember, that person can be yourself after six months!
+Komentar sangat berguna bagi pembaca program sehingga mereka bisa memahami dengan mudah apa yang dilakukan oleh prgoram tersebut. Ingat, orang tersebut mungkin saja kita sendiri setelah enam bulan kedepan!
 
-## Literal Constants
+## Konstanta Literal/Literal Constants
 
-An example of a literal constant is a number like `5`, `1.23`, or a string like `'This is a string'` or `"It's a string!"`.
+Sebuah contoh konstanta literal adalah angka seperti `5`, `1.23`, atau sebuah string seperti `'This is a string'` atau `"It's a string!"`.
 
-It is called a literal because it is _literal_ - you use its value literally. The number `2` always represents itself and nothing else - it is a _constant_ because its value cannot be changed. Hence, all these are referred to as literal constants.
+Data tersebut diberinama literal karena ia bersifat _literal_ - kita menggunakan nilainya secara _literal_ maksudnya secara harfiah persis seperti apa yang ditulis. Angka `2` akan selalu bernilai dua, yaitu angka dua yang kita kenal sehari-hari bukan mewakili jenis data yang lain - ia adalah sebuah _constant_ atau konstanta karena nilainya tidak akan berubah. Oleh karena itu data seperti di atas disebut dengan konstanta literal/_literal constants_.
 
 ## Numbers
 
-Numbers are mainly of two types - integers and floats.
+Numbers umumnya terdiri dari dua tipe - bilangan bulat (integer) dan bilangan riil (float).
 
-An example of an integer is `2` which is just a whole number.
+Contoh sebuah bilangan bulat adalah `2`. 
 
-Examples of floating point numbers (or _floats_ for short) are `3.23` and `52.3E-4`. The `E` notation indicates powers of 10. In this case, `52.3E-4` means `52.3 * 10^-4^`.
+Contoh bilangan riil adalah `3.23` dan `52.3E-4`. Notasi `E` mengindikasikan pangkat 10 (exponent). Dalam kasus ini `52.3E-4` berarti `52.3 * 10^-4^`.
 
-> **Note for Experienced Programmers**
+> **Catatan Untuk Programmer Berpengalaman**
 > 
-> There is no separate `long` type. The `int` type can be an integer of any size.
+> Tidak adalah tipe `long` yang terpisah untuk bilangan bulat. Tipe `int` dapat berupa bilangan bulat berukuran berapapun.
 
 ## Strings
 
-A string is a _sequence_ of _characters_. Strings are basically just a bunch of words.
+Sebuah string adalah _deretan_ _karakter_. String secara sederhana hanya kumpulan kata-kata.
 
-You will be using strings in almost every Python program that you write, so pay attention to the following part.
+Kita akan menggunakan string hampir disetiap program yang kita tulis, jadi perhatikan baik-baik bagian berikut ini.
 
 ### Single Quote
 
-You can specify strings using single quotes such as `'Quote me on this'`.
+Kita dapat membuat string dengan _single quotes_ alias tanda petik satu seperti `'Quote me on this'`.
 
-All white space i.e. spaces and tabs, within the quotes, are preserved as-is.
+Spasi dan tab yang ada diantara tanda petik akan ditampilkan apa adanya.
 
 ### Double Quotes
 
-Strings in double quotes work exactly the same way as strings in single quotes. An example is `"What's your name?"`.
+String yang ada didalam tanda petik dua bekerja sampa persis dengan string yang menggunakan tanda petik satu. Contohnya adalah `"What's your name?"`.
 
 ### Triple Quotes {#triple-quotes}
 
-You can specify multi-line strings using triple quotes - (`"""` or `'''`). You can use single quotes and double quotes freely within the triple quotes. An example is:
+Kita bisa menulis string lebih dari satu baris menggunakan _triple quotes_ - (`"""` atau `'''`). Kita bebas menggunakan tanda petik satu maupun petik dua didalam _triple quotes_. Contohnya adalah:
 
 ```python
 '''This is a multi-line string. This is the first line.
@@ -77,27 +77,25 @@ He said "Bond, James Bond."
 '''
 ```
 
-### Strings Are Immutable
+### Strings Bersifat Immutable
 
-This means that once you have created a string, you cannot change it. Although this might seem like
-a bad thing, it really isn't. We will see why this is not a limitation in the various programs that
-we see later on.
+Artinya adalah sekali kita membuat sebuah string, kita tidak bisa mengubahnya. Meski terlihat sebagai hal yang buruk, namun nyatanya hal ini tidak lah seperti itu. Kita akan melihat mengapa kekurangan ini tidak akan menghambat program-program yang nantinya akan kita buat. 
 
-> **Note for C/C++ Programmers**
+> **Catatan Untuk Programmer C/C++**
 > 
-> There is no separate `char` data type in Python. There is no real need for it and I am sure you won't miss it.
+> Tidak ada tipe data `char` terpisah di Python. Tidak ada kebutuhan untuk itu dan Penulis yakin pembaca pun tidak akan menginginkannya. 
 
 <!-- -->
 
-> **Note for Perl/PHP Programmers**
+> **Catatan Untuk Programmer Perl/PHP**
 > 
-> Remember that single-quoted strings and double-quoted strings are the same - they do not differ in any way.
+> Ingat bahwa string dengan tanda petik satu maupun dua adalah string yang sama - mereka tidak memiliki perbedaan apapun.
 
-### The format method
+### Method format
 
-Sometimes we may want to construct strings from other information. This is where the `format()` method is useful.
+Terkadang kita ingin membuat string dan menggabungkannya dengan informasi lain. Disinilah method `format()` akan membantu. 
 
-Save the following lines as a file `str_format.py`:
+Simpan baris berikut dalam sebuah file bernama `str_format.py`:
 
 ```python
 age = 20
@@ -107,7 +105,7 @@ print('{0} was {1} years old when he wrote this book'.format(name, age))
 print('Why is {0} playing with that python?'.format(name))
 ```
 
-Output:
+Keluaran:
 
 ```
 $ python str_format.py
@@ -115,21 +113,21 @@ Swaroop was 20 years old when he wrote this book
 Why is Swaroop playing with that python?
 ```
 
-**How It Works**
+**Bagaimana Cara Kerjanya**
 
-A string can use certain specifications and subsequently, the `format` method can be called to substitute those specifications with corresponding arguments to the `format` method.
+Sebuah string dapat disisipkan data tertentu, method `format` dapat dipanggil untuk menyisipkan data tersebut.
 
-Observe the first usage where we use `{0}` and this corresponds to the variable `name` which is the first argument to the format method. Similarly, the second specification is `{1}` corresponding to `age` which is the second argument to the format method. Note that Python starts counting from 0 which means that first position is at index 0, second position is at index 1, and so on.
+Perhatikan dimana kita menulis `{0}` dan menjadi bagian yang akan menampilkan isi dari variabel `name` yang datang dari argumen pertama method format. Hal yang sama juga terjadi untuk `{1}` yang menampilkan isi variabel `age` di argumen kedua method format. Perhatikan bahwa Python mulai menghitung dari 0 yang mana artinya posisi pertama ada di indeks 0, dan posisi kedua ada di indeks ke 1, dan seterusnya.
 
-Notice that we could have achieved the same using string concatenation:
+Kita juga bisa mendapatkan hasil yang sama menggunakan _string concatenation_:
 
 ```python
 name + ' is ' + str(age) + ' years old'
 ```
 
-but that is much uglier and error-prone. Second, the conversion to string would be done automatically by the `format` method instead of the explicit conversion to strings needed in this case. Third, when using the `format` method, we can change the message without having to deal with the variables used and vice-versa.
+tapi solusi ini lebih jelek dan mudah mendatangkan kesalahan. Selain itu, konversi dari integer ke string dilakukan secara otomatis oleh method `format` daripada melakukan konversi secara eksplisit (pemanggilan method `str()`). Lalu, saat menggunakan method `format`, kita dapat mengubah isi pesan tanpa berhubungan langsung dengan nama variabel yang dipakai dan juga sebaliknya. 
 
-Also note that the numbers are optional, so you could have also written as:
+Juga ingat bahwa angka yang ditulis didalam `{}` bersifat opsional, jadi kita bisa menulisnya sebagai:
 
 ```python
 age = 20
@@ -139,9 +137,9 @@ print('{} was {} years old when he wrote this book'.format(name, age))
 print('Why is {} playing with that python?'.format(name))
 ```
 
-which will give the same exact output as the previous program.
+hasil yang didapat akan sama dengan program sebelumnya.
 
-What Python does in the `format` method is that it substitutes each argument value into the place of the specification. There can be more detailed specifications such as:
+Yang dilakukan oleh Python melalui method `format` adalah menyisipkan setiap nilai di dalam argumennya ke tempat yang telah ditentukan. Kita bahkan bisa menambah spesifikasi yang lebih detail seperti:
 
 ```python
 # decimal (.) precision of 3 for float '0.333'
@@ -153,7 +151,7 @@ print('{0:_^11}'.format('hello'))
 print('{name} wrote {book}'.format(name='Swaroop', book='A Byte of Python'))
 ```
 
-Output:
+Keluaran:
 
 ```
 0.333
@@ -161,20 +159,20 @@ ___hello___
 Swaroop wrote A Byte of Python
 ```
 
-Since we are discussing formatting, note that `print` always ends with an invisible "new line" character (`\n`) so that repeated calls to `print` will all print on a separate line each. To prevent this newline character from being printed, you can specify that it should `end` with a blank:
+Karena kita mendiskusikan format, perhatiakn perintah `print` akan selalu menambahkan karakter "baris baru" (`\n`) sehingga memanggil perintah `print` akan mencetaknya dibaris yang berbeda. Untuk mencegah penambahan karakter baris baru, kita harus memberikan parameter `end` kosong sebagai argumen kedua:
 
 ```python
 print('a', end='')
 print('b', end='')
 ```
 
-Output is:
+Keluarannya adalah:
 
 ```
 ab
 ```
 
-Or you can `end` with a space:
+Atau kita bisa menentukan `end` dengan spasi kosong:
 
 ```python
 print('a', end=' ')
@@ -182,7 +180,7 @@ print('b', end=' ')
 print('c')
 ```
 
-Output is:
+Keluarannya:
 
 ```
 a b c
@@ -190,26 +188,26 @@ a b c
 
 ### Escape Sequences
 
-Suppose, you want to have a string which contains a single quote (`'`), how will you specify this string? For example, the string is `"What's your name?"`. You cannot specify `'What's your name?'` because Python will be confused as to where the string starts and ends. So, you will have to specify that this single quote does not indicate the end of the string. This can be done with the help of what is called an _escape sequence_. You specify the single quote as `\'` : notice the backslash. Now, you can specify the string as `'What\'s your name?'`.
+Anggaplah kita ingin membuat sebuah string yang didalamnya terdapat simbol petik satu (`'`), bagaimana kita membuat string ini? Contoh string tersebut adalah `"What's your name?"`. Kita tidak dapat menuliskannya sebagai `'What's your name?'` karena Python akan bingung menentukan awal dan akhir string tersebut. Untuk menyelesaikan masalah ini kita bisa menggunakan alat bantu bernama _escape sequence_. Kita menulis petik satu menggunakan `\'` : perhatikan simbol _backslash_. Sekarang, kita bisa menuliskan string tadi sebagai `'What\'s your name?'`.
 
-Another way of specifying this specific string would be `"What's your name?"` i.e. using double quotes. Similarly, you have to use an escape sequence for using a double quote itself in a double quoted string. Also, you have to indicate the backslash itself using the escape sequence `\\`.
+Cara lain untuk menulis string seperti ini adalah dengan petik dua `"What's your name?"`. Begitu juga saat akan menulis petik dua di dalam string yang menggunakan petik dua, kita harus menggunakan _escape sequence_. Lalu, jika ingin menulis _backslash_ kita juga harus menulisnya dengan _escape sequence_ `\\`.
 
-What if you wanted to specify a two-line string? One way is to use a triple-quoted string as shown [previously](#triple-quotes) or you can use an escape sequence for the newline character - `\n` to indicate the start of a new line. An example is:
+Bagaimana jika ingin menulis string yang terdiri dari dua baris? Cara pertama ialah menggunakan string petik tiga seperti yang ada di pembahasan [sebelumnya](#triple-quotes) atau menggunakan _escape sequence_ karakter baris baru - `\n` yang mengindikasikan dimulainya baris baru. Contohnya adalah:
 
 ```python
 'This is the first line\nThis is the second line'
 ```
 
-Another useful escape sequence to know is the tab: `\t`. There are many more escape sequences but I have mentioned only the most useful ones here.
+_Escape sequence_ lain yang berguna adalah karakter tab: `\t`. Ada banyak lagi _escape sequence_ lain namun ini lah karakter-karakter yang paling sering dipakai. 
 
-One thing to note is that in a string, a single backslash at the end of the line indicates that the string is continued in the next line, but no newline is added. For example:
+Satu hal lagi yang perlu diperhatikan, sebuah string dengan tanda _backslash_ diakhir baris tersebut memberitahu bahwa string itu akan dilanjutkan dibaris berikutnya tanpa menambahkan baris baru. Perhatikan contoh:
 
 ```python
 "This is the first sentence. \
 This is the second sentence."
 ```
 
-is equivalent to
+maksudnya sama dengan
 
 ```python
 "This is the first sentence. This is the second sentence."
@@ -217,68 +215,68 @@ is equivalent to
 
 ### Raw String
 
-If you need to specify some strings where no special processing such as escape sequences are handled, then what you need is to specify a _raw_ string by prefixing `r` or `R` to the string. An example is:
+Jika ingin menulis beberapa string apa adanya tanpa memberikan hal-hal lain seperti _escape sequences_, maka kita perlu membuat string tersebut menjadi _raw string_ dengan memberikan karakter `r` atau `R` di depan string tersebut. Contohny adalah:
 
 ```python
 r"Newlines are indicated by \n"
 ```
 
-> **Note for Regular Expression Users**
+> **Catatan untuk Pengguna Regular Expression**
 > 
-> Always use raw strings when dealing with regular expressions. Otherwise, a lot of backwhacking may be required. For example, backreferences can be referred to as `'\\1'` or `r'\1'`.
+> Selalu gunakan raw string saat menggunakan _regular expression_. Jika tidak, beberapa _backwhacking_ mungkin perlu dilakukan. Contoh, _backreferences_ bisa ditulis sebagai `'\\1'` atau `r'\1'`.
 
-## Variable
+## Variabel
 
-Using just literal constants can soon become boring - we need some way of storing any information and manipulate them as well. This is where _variables_ come into the picture. Variables are exactly what the name implies - their value can vary, i.e., you can store anything using a variable. Variables are just parts of your computer's memory where you store some information. Unlike literal constants, you need some method of accessing these variables and hence you give them names.
+Hanya menggunakan konstanta literal saja dapat membuat bosa - kita perlu cara untuk menyimpan informasi lain dan memanipulasinya. Disini lah peran _variabel_ berguna. Variabel, sesuai dengan namanya dapat menyimpan nilai berjenis apapun. Variabel merupakan bagian dari memori komputer kita tempat menyimpan beberapa informasi. Tidak seperti konstanta literal, kita memerlukan sebuah cara untuk mengakses informasi tadi yaitu dengan memberikan nama. 
 
-## Identifier Naming
+## Penamaan Variabel
 
-Variables are examples of identifiers. _Identifiers_ are names given to identify _something_. There are some rules you have to follow for naming identifiers:
+Variabel adalah salah satu contoh _identifiers_. _Identifiers_ adalah nama-nama yang diberikan untuk menandai _sesuatu_. Ada beberapa aturan yang harus diikuti:
 
-- The first character of the identifier must be a letter of the alphabet (uppercase ASCII or lowercase ASCII or Unicode character) or an underscore (`_`).
-- The rest of the identifier name can consist of letters (uppercase ASCII or lowercase ASCII or Unicode character), underscores (`_`) or digits (0-9).
-- Identifier names are case-sensitive. For example, `myname` and `myName` are _not_ the same. Note the lowercase `n` in the former and the uppercase `N` in the latter.
-- Examples of _valid_ identifier names are `i`, `name_2_3`. Examples of _invalid_ identifier names are `2things`, `this is spaced out`, `my-name` and `>a1b2_c3`.
+- Karakter pertama harus berupa huruf (karakter ASCII uppercase (kapital) maupun lowercase (biasa) atau karakter Unicode) atau berupa _unserscore_ (`_`).
+- Karakter-karakter berikutnya dapat berupa huruf, _underscores_, atau angka (0-9).
+- Identifier bersifat _case-sensitive_. Contoh, `myname` dan `myName` adalah dua nama yang berbeda. Perhatikan huruf `n` kecil dan `N` besar. 
+- Contoh indentifier yang valid adalah `i`, `name_2_3`. Contoh identifier yang tidak valid adalah `2things`, `this is spaced out`, `my-name` dan `>a1b2_c3`.
 
-## Data Types
+## Tipe Data
 
-Variables can hold values of different types called _data types_. The basic types are numbers and strings, which we have already discussed. In later chapters, we will see how to create our own types using [classes](./oop.md#classes).
+Variabel dapat menyimpan jenis/tipe data yang berbeda-beda.Tipe dasarnya adalah number dan string, yang sudah perna kita bahas. Di bab-babbberikutnya, kita juga bisa membuat tipe data baru dengan  [classes](./oop.md#classes).
 
-## Object
+## Objek
 
-Remember, Python refers to anything used in a program as an _object_.  This is meant in the generic sense. Instead of saying "the _something_"', we say "the _object_".
+Ingat, Python akan menganggap semua bagian yang dipakai di dalam program sebagai sebuah _objek_. Sehingga kita tidak mengatakan "sebuah _sesuatu_", tapi kita mengatakan "sebuah _objek_".
 
-> **Note for Object Oriented Programming users**:
+> **Catatan untuk Pengguna Object Oriented Programming**:
 >
-> Python is strongly object-oriented in the sense that everything is an object including numbers, strings and functions.
+> Python adalah bahasa yang sangat berorientasi objek dalam artian semua adalah sebuah objek termasuk angka, string, dan fungsi. 
 
-We will now see how to use variables along with literal constants. Save the following example and run the program.
+Kita akan melihat bagaimana menggunakan variabel bersama dengan konstanta literal. Simpan contoh program di bagian selanjutnya, lalu jalankan. 
 
-## How to write Python programs
+## Bagaimana Cara Menulis Program Python
 
-Henceforth, the standard procedure to save and run a Python program is as follows:
+Prosedur standar untuk menyimpan dan menjalankan sebuah program Python adalah sebagai berikut:
 
-### For PyCharm
+### Untuk PyCharm
 
-1. Open [PyCharm](./first_steps.md#pycharm).
-2. Create new file with the filename mentioned.
-3. Type the program code given in the example.
-4. Right-click and run the current file.
+1. Buka [PyCharm](./first_steps.md#pycharm).
+2. Buat fiel baru dengan nama file yang ditentukan.
+3. Ketikkan kode program yang diberikan.
+4. Klik kanan lalu pilih "run the current file".
 
-NOTE: Whenever you have to provide [command line arguments](./modules.md#modules), click on `Run` -> `Edit Configurations` and type the arguments in the `Script parameters:` section and click the `OK` button:
+NOTE: Setiap kali kita harus memberikan [argumen di command line](./modules.md#modules), Klik dibagian `Run` -> `Edit Configurations` lalu ketikkan argumen yang dimaksud dibagian `Script parameters:` dan klik tombol `OK`:
 
 ![PyCharm command line arguments](./img/pycharm_command_line_arguments.png)
 
-### For other editors
+### Untuk editor lain
 
-1. Open your editor of choice.
-2. Type the program code given in the example.
-3. Save it as a file with the filename mentioned.
-4. Run the interpreter with the command `python program.py` to run the program.
+1. Buka editor pilihan.
+2. Tulis kode program yang diberikan.
+3. Simpan dengan nama yang ditentukan.
+4. Jalankan interpreter dengan perintah `python program.py` di terminal.
 
-### Example: Using Variables And Literal Constants
+### Contoh: Menggunakan Variabel dan Konstanta Literal
 
-Type and run the following program:
+Tulis dan jalankan program berikut:
 
 ```python
 # Filename : var.py
@@ -292,7 +290,7 @@ This is the second line.'''
 print(s)
 ```
 
-Output:
+Keluaran:
 
 ```
 5
@@ -301,55 +299,55 @@ This is a multi-line string.
 This is the second line.
 ```
 
-**How It Works**
+**Bagaimana Cara Kerjanyata**
 
-Here's how this program works. First, we assign the literal constant value `5` to the variable `i` using the assignment operator (`=`). This line is called a statement because it states that something should be done and in this case, we connect the variable name `i` to the value `5`. Next, we print the value of `i` using the `print` statement which, unsurprisingly, just prints the value of the variable to the screen.
+Berikut ini bagaimana cara kerja progra di atas. Pertama, kita menulis sebuah konstanta litera `5` ke dalam variabel `i` menggunakan assignment operator (`=`). Baris ini disebut dengan sebuah _statement_ (perintah) karena ia menyatakan (_states_) sesuatu yang harus dilakukan, dalam kasus ini kita menghubungkan variabel bernama `i` dengan nilai `5`. Selanjutnya, kita mencetak nilai `i` dengan statement `print` yang akan mencetak isi dari variabel tersebut ke layar. 
 
-Then we add `1` to the value stored in `i` and store it back. We then print it and expectedly, we get the value `6`.
+Lalu kita menambahkan `1` ke dalam nilai yang ada di dalam variabel `i` dan menyimpannya. Kita lalu mencetak isinya dan mendapatkan nilai `6`. 
 
-Similarly, we assign the literal string to the variable `s` and then print it.
+Berikutnya, kita membuat string dan menyimpannya ke dalam variabel `s` lalu mencetaknya. 
 
-> **Note for static language programmers**
+> **Catatan untuk programmer static language**
 > 
-> Variables are used by just assigning them a value. No declaration or data type definition is needed/used.
+> Variabel dibuat hanya dengan memberikan suatu nilai disebelahnya. Tidak ada deklarasi atau tipe data yang harus diberikan saat membuatnya. 
 
-## Logical And Physical Line
+## Baris _Logical_ dan _Physical_
 
-A physical line is what you _see_ when you write the program. A logical line is what _Python sees_ as a single statement. Python implicitly assumes that each _physical line_ corresponds to a _logical line_.
+Baris fisik (_physical_) adalah baris yang kita _lihat_ saat menulis program. Baris logika (_logical_) adalah baris yang _Python lihat_ sebagai sebuah perintah (_statement_). Python secara implisit mengasumsikan sebuah baris fisik sebagai sebuah baris logika. 
 
-An example of a logical line is a statement like `print 'hello world'` - if this was on a line by itself (as you see it in an editor), then this also corresponds to a physical line.
+Sebuah contoh baris logika adalah perintah seperti `print 'hello world'` - jika ini adalah satu-satunya perintah di baris tersaebut (seperti yang kita lihat di editor), maka ia juga berupa baris fisik.
 
-Implicitly, Python encourages the use of a single statement per line which makes code more readable.
+Secara implisit, Python akan menyarankan penggunaan satu perintah perbaris untuk membuat kode lebih mudah dibaca. 
 
-If you want to specify more than one logical line on a single physical line, then you have to explicitly specify this using a semicolon (`;`) which indicates the end of a logical line/statement. For example:
+Jika ingin menentukan lebih dari satu baris logika di satu baris fisik, maka kita harus secara eksplisit memberitahunya lewat simbol titik koma (`;`). Misalnya:
 
 ```python
 i = 5
 print(i)
 ```
 
-is effectively same as
+sama efektifnya dengan
 
 ```python
 i = 5;
 print(i);
 ```
 
-which is also same as
+yang juga sama dengan
 
 ```python
 i = 5; print(i);
 ```
 
-and same as
+dan sama dengan 
 
 ```python
 i = 5; print(i)
 ```
 
-However, I *strongly recommend* that you stick to *writing a maximum of a single logical line on each single physical line*. The idea is that you should never use the semicolon. In fact, I have _never_ used or even seen a semicolon in a Python program.
+Meskipun bisa, penulis *sangat merekomendasikan* untuk menulis *satu baris logika untuk setiap satu baris fisik*. Maksudnya adalah meminimalkan penggunaan titik koma. Penulis bahkan belum pernah menggunakan satu titik koma di sebuah program Python. 
 
-There is one kind of situation where this concept is really useful: if you have a long line of code, you can break it into multiple physical lines by using the backslash. This is referred to as _explicit line joining_:
+Ada sebuah situasi dimana konsep ini berguna: jika kita memiliki baris kode yang panjang, kita bisa memecahnya menjadi beberapa baris fisik dengan sebuah _backslash_. Teknik ini dinamakan dengan _explicit line joining_:
 
 ```python
 s = 'This is a string. \
@@ -357,34 +355,34 @@ This continues the string.'
 print(s)
 ```
 
-Output:
+Keluaran:
 
 ```
 This is a string. This continues the string.
 ```
 
-Similarly,
+Sama juga,
 
 ```python
 i = \
 5
 ```
 
-is the same as
+tidak berbeda dengan
 
 ```python
 i = 5
 ```
 
-Sometimes, there is an implicit assumption where you don't need to use a backslash. This is the case where the logical line has a starting parentheses, starting square brackets or a starting curly braces but not an ending one. This is called *implicit line joining*. You can see this in action when we write programs using [list](./data_structures.md#lists) in later chapters.
+Terkadang, ada saat dimana kita tidak perlu sebuah backslash. Kasus ini terjadi saat baris logika memiliki kurang pembuka (`(`, `[` atau `{`) tapi bukan baris penutup. Teknik ini dinamakan *implicit line joining*. Nanti bisa kita lihat saat membuat program menggunakan [list](./data_structures.md#lists).
 
-## Indentation
+## Indentasi
 
-Whitespace is important in Python. Actually, *whitespace at the beginning of the line is important*. This is called _indentation_. Leading whitespace (spaces and tabs) at the beginning of the logical line is used to determine the indentation level of the logical line, which in turn is used to determine the grouping of statements.
+_Whitespaces_ atau spasi kosong merupakan bagian yang cukup penting di Python. Bahkan, *spasi kosong dibagian awal baris memiliki arti penting*. Bagian ini dinamakan dengan _indentasi_. Spasi kosong (baik berupa karakter spasi atau tab) di awal baris logika dipakai untuk menentukan level indentasi yang dipakai untuk menentukan pengelompokkan perintah. 
 
-This means that statements which go together _must_ have the same indentation. Each such set of statements is called a *block*. We will see examples of how blocks are important in later chapters.
+Ini artinya bahwa perintah-perintah yang satu kelompok _harus_ memiliki indentasi yang sama. Kelompok-kelompok tersebut diberi nama *block*. Kita akan melihat bagaimana block memiliki peranan penting di bab-bab berikutnya. 
 
-One thing you should remember is that wrong indentation can give rise to errors. For example:
+Satu hal yang perlu diingat adalah indentasi yang tidak sesuai bisa menyebabkan error. Misal:
 
 ```python
 i = 5
@@ -393,7 +391,7 @@ i = 5
 print('I repeat, the value is', i)
 ```
 
-When you run this, you get the following error:
+Saat program diatas dieksekusi, kita akan mendapat pesan berikut:
 
 ```
   File "whitespace.py", line 3
@@ -402,19 +400,19 @@ When you run this, you get the following error:
 IndentationError: unexpected indent
 ```
 
-Notice that there is a single space at the beginning of the second line. The error indicated by Python tells us that the syntax of the program is invalid i.e. the program was not properly written. What this means to you is that _you cannot arbitrarily start new blocks of statements_ (except for the default main block which you have been using all along, of course). Cases where you can use new blocks will be detailed in later chapters such as the [control flow](./control_flow.md#control_flow).
+Perhatikan bahwa ada satu spasi di bagian awal baris tersebut. Python memberitahu kita bahwa sintaks program ini tidak valid atau dengan kata lain program ini tidak ditulis dengan benar. Maksud dari error ini adalah kita tidak boleh sembarangan membuat blok baru. Kita baru bisa membuat blok baru saat menggunakan [control flow](./control_flow.md#control_flow).
 
-> **How to indent**
+> **Cara melakukan indentasi**
 > 
-> Use four spaces for indentation. This is the official Python language recommendation. Good editors will automatically do this for you. Make sure you use a consistent number of spaces for indentation, otherwise your program will not run or will have unexpected behavior.
+> Gunakan emapt spasi untuk indentasi. Ini adalah rekomendasi resmi dari bahasa pemrograman Python. Editor yang baik akan melakukannya secara otomatis untuk kita. Pastikan untuk menggunakan jumlah spasi yang konsisten untuk indentasi, jika tidak maka program kita tidak akan bisa berjalan atau memiliki tingkah laku yang tidak benar. 
 
 <!-- -->
 
-> **Note to static language programmers**
+> **Catatan untuk programmer bahasa pemrogaman static**
 > 
-> Python will always use indentation for blocks and will never use braces. Run `from __future__ import braces` to learn more.
+> Python akan selalu menggunakan indentasi untuk blok dan tidak akan pernah menggunakan kurung kurawal. Jalankan perintah `from __future__ import braces` untuk penjelasan lebih detail.
 
-## Summary
+## Kesimpulan
 
-Now that we have gone through many nitty-gritty details, we can move on to more interesting stuff such as control flow statements. Be sure to become comfortable with what you have read in this chapter.
+Sekrang kita sudah membahas banyak detail-detail bahasa Python dan akhirnya kita bisa lanjut ke bagian yang lebih menarik seperti _control flow statements_. Pastikan sudah cukup bisa memahami konten bab ini.
 
