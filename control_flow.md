@@ -1,8 +1,8 @@
 # Control Flow {#control-flow}
 
-In the programs we have seen till now, there has always been a series of statements faithfully executed by Python in exact top-down order. What if you wanted to change the flow of how it works? For example, you want the program to take some decisions and do different things depending on different situations, such as printing 'Good Morning' or 'Good Evening' depending on the time of the day?
+Di dalam program yang sudah kita tulis, selalu berisi deretan perintah yang dieksekusi satu persatu dari atas ke bawah. Bagaimana jika kita ingin mengubah bagiaman program tersebut berjalan? Misalnya, kita ingin program tersebut untuk melakukan sebuah keputusan yang bergantung pada situasi tertentu, contohnya mencetak 'Selamat Pagi' atau 'Selamat Malam' tergantung waktu saat ini?
 
-As you might have guessed, this is achieved using control flow statements. There are three control flow statements in Python - `if`, `for` and `while`.
+Seperti yang bisa pembaca tebak, kita bisa melakukannya dengan menggunakan _control flow statements_. Ada tiga _control flow statements_ di Python - `if`, `for` dan `while`.
 
 ## The `if` statement
 
